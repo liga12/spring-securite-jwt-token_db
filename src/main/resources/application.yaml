@@ -1,0 +1,18 @@
+server:
+  port: 8090
+spring:
+  mandatory-file-encoding: UTF-8
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vi-soft
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    hibernate:
+      ddl-auto: update
